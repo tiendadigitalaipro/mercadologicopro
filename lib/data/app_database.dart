@@ -51,4 +51,11 @@ class AppDatabase {
   }
 
   static int? getInt(String key) => _prefs?.getInt(_prefix + key);
+
+  static Future<void> setBool(String key, bool value) async {
+    await init();
+    await _prefs!.setBool(_prefix + key, value);
+  }
+
+  static bool? getBool(String key) => _prefs?.getBool(_prefix + key);
 }

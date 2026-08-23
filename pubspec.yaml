@@ -38,6 +38,7 @@ dependencies:
   provider: ^6.1.2
   http: ^1.2.2
   posthog_flutter: ^5.36.6
+  shimmer: ^4.0.0
 
 dev_dependencies:
   flutter_test:
